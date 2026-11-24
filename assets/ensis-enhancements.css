@@ -471,3 +471,152 @@ dialog.news-modal::backdrop {
     font-size: 0.98rem;
   }
 }
+
+/* =========================================================
+   Mobile & Touch Experience Enhancements
+   ========================================================= */
+html,
+body {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+a {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(255, 193, 7, 0.18);
+}
+
+/* Safe-area spacing for floating WhatsApp FAB on iOS/Android gesture bars */
+a[aria-label="WhatsApp ENSIS Security"] {
+  bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)) !important;
+  right: calc(1.25rem + env(safe-area-inset-right, 0px)) !important;
+}
+
+@media (max-width: 640px) {
+  /* Dynamic mobile viewport height so address bar never clips the hero */
+  #inicio {
+    min-height: 100svh;
+    align-items: flex-end;
+  }
+
+  /* Frame the guard higher so cap, crest & face breathe above the headline */
+  #inicio > div:first-child img[src*="hero-guard"] {
+    object-position: 68% 15% !important;
+    filter: brightness(1.16) contrast(1.06) saturate(1.36);
+  }
+
+  /* Balanced mobile scrim: keeps upper face/cap vibrant, ensures crisp text contrast below */
+  #inicio .hero-scrim-horizontal {
+    background: linear-gradient(
+      to bottom var(--in-oklab),
+      rgba(11, 15, 20, 0.28) 0%,
+      rgba(11, 15, 20, 0.48) 34%,
+      rgba(11, 15, 20, 0.80) 64%,
+      rgba(11, 15, 20, 0.94) 100%
+    ) !important;
+  }
+
+  #inicio .hero-scrim-vertical {
+    background: linear-gradient(
+      to top var(--in-oklab),
+      rgba(11, 15, 20, 0.82) 0%,
+      rgba(11, 15, 20, 0.15) 42%,
+      rgba(11, 15, 20, 0.35) 100%
+    ) !important;
+  }
+
+  /* Push hero content slightly lower so headline doesn't sit directly over the guard's eyes */
+  #inicio > div.relative.z-10 {
+    padding-top: 9.5rem !important;
+    padding-bottom: 4.75rem !important;
+  }
+
+  /* Crisp headline, subtitle & bottom pillar readability over photography */
+  #inicio h1 {
+    font-size: clamp(2.35rem, 11vw, 3.1rem) !important;
+    line-height: 0.98 !important;
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.65);
+  }
+
+  #inicio p {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Secondary CTA button ("Conocer servicios"): frosted dark glass for high contrast over blue shirt */
+  #inicio a[href="#servicios"] {
+    background: rgba(11, 15, 20, 0.62) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-color: rgba(255, 255, 255, 0.38) !important;
+    color: #ffffff !important;
+    min-height: 52px;
+  }
+
+  #inicio .btn-primary {
+    min-height: 52px;
+  }
+
+  /* Bottom 4 pillars: crisp contrast over uniform */
+  #inicio .grid {
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Horizontal swipeable single-row news filter bar on mobile */
+  .news-filter-group {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.35rem;
+    margin-inline: -0.25rem;
+    padding-inline: 0.25rem;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .news-filter-group::-webkit-scrollbar {
+    display: none;
+  }
+
+  .news-filter-btn {
+    flex-shrink: 0;
+    min-height: 44px;
+    scroll-snap-align: start;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Comfortable mobile modal sheet */
+  dialog.news-modal {
+    width: min(94vw, 540px);
+    max-height: 90dvh;
+    border-radius: 1.15rem;
+  }
+
+  .news-modal-close-btn {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .news-modal-body {
+    padding: 1.15rem 1.15rem calc(1.25rem + env(safe-area-inset-bottom, 0px));
+    gap: 0.85rem;
+  }
+
+  .news-modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .news-modal-source-btn,
+  .news-modal-secondary-btn {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
+    text-align: center;
+  }
+}
