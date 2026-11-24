@@ -23,7 +23,7 @@
         'Búsqueda rápida de eventos mediante lenguaje natural para equipos de monitoreo.'
       ],
       source: 'Segurilatam',
-      url: 'https://www.segurilatam.com/tecnologia/seguridad-electronica/'
+      url: 'https://www.segurilatam.com/'
     },
     {
       id: 'access-control',
@@ -65,7 +65,7 @@
         'Alineación operativa entre seguridad física y áreas de tecnología (TI).'
       ],
       source: 'Seguritecnia',
-      url: 'https://www.seguritecnia.es/seguridad-fisica/'
+      url: 'https://www.seguritecnia.es/'
     },
     {
       id: 'hybrid-guard',
@@ -85,8 +85,8 @@
         'Registro digital de rondas, novedades y reportes en tiempo real.',
         'Mejor equilibrio entre cobertura presencial y respaldo electrónico 24/7.'
       ],
-      source: 'ASIS International',
-      url: 'https://www.asisonline.org/security-management-magazine/'
+      source: 'Revista Seguridad 360',
+      url: 'https://revistaseguridad360.com/'
     },
     {
       id: 'iot-cybersecurity',
@@ -106,8 +106,8 @@
         'Actualizaciones continuas de firmware y segmentación de redes de seguridad.',
         'Autenticación multifactor (MFA) y principios Zero Trust en accesos remotos.'
       ],
-      source: 'Security Magazine',
-      url: 'https://www.securitymagazine.com/topics/2236-physical-security'
+      source: 'Axis Newsroom (ES)',
+      url: 'https://newsroom.axis.com/es-es'
     },
     {
       id: 'cloud-analytics',
