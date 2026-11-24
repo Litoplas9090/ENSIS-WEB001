@@ -53,19 +53,19 @@
       badgeClass: 'news-badge--fisica',
       date: '2026',
       image: './images/news/news-unified-platform.jpg',
-      imageAlt: 'Centro de control de seguridad con plataforma unificada de CCTV, accesos y alarmas',
-      title: 'Plataforma abierta ODISEE para seguridad física en entornos críticos',
+      imageAlt: 'Centro de control de seguridad operando bajo estándares certificados de calidad ALAS',
+      title: 'Estándar Certificable ALAS: calidad y buenas prácticas en seguridad',
       shortSummary:
-        'DORLET lanza en Latinoamérica un sistema unificado que centraliza accesos, intrusión y video.',
+        'ALAS impulsa estándares certificables que elevan la excelencia operativa del sector en Latinoamérica.',
       fullSummary:
-        'DORLET presentó en Latinoamérica ODISEE, una plataforma abierta diseñada para integrar y centralizar la gestión de la seguridad física en infraestructuras críticas, conectando control de accesos, videovigilancia y alarmas en un solo panel.',
+        'La Asociación Latinoamericana de Seguridad (ALAS), a través de sus comités nacionales en la región, promueve el Estándar Certificable ALAS para profesionalizar empresas, fortalecer procesos técnicos y garantizar soluciones confiables en seguridad física y electrónica.',
       keyPoints: [
-        'Gestión unificada de subsistemas de seguridad física desde una sola interfaz.',
-        'Arquitectura abierta preparada para crecer según las necesidades de cada sede.',
-        'Mayor trazabilidad y respuesta coordinada ante incidentes críticos.'
+        'Respaldo regional orientado a elevar la calidad técnica y operativa del sector.',
+        'Alineación de protocolos y buenas prácticas adaptadas al mercado latinoamericano.',
+        'Mayor confianza y garantía para clientes corporativos, residenciales e industriales.'
       ],
-      source: 'Tecnoseguro',
-      url: 'https://www.tecnoseguro.com/noticias/integracion/dorlet-odisee-seguridad-integracion'
+      source: 'ALAS',
+      url: 'https://alas-la.org/estandar-certificable-alas/'
     },
     {
       id: 'hybrid-guard',
@@ -112,23 +112,23 @@
     {
       id: 'cloud-analytics',
       category: 'electronica',
-      categoryLabel: 'Analítica y Nube',
+      categoryLabel: 'Innovación y Tendencias',
       badgeClass: '',
       date: '2026',
       image: './images/news/news-cloud-analytics.jpg',
-      imageAlt: 'Complejo industrial y empresarial con videovigilancia centralizada en la nube',
-      title: 'Seguridad centralizada en parques industriales de alto tráfico',
+      imageAlt: 'Complejo empresarial y comercial con soluciones de seguridad electrónica de última generación',
+      title: 'Encuentros Tecnológicos ALAS: nuevas tendencias en seguridad electrónica',
       shortSummary:
-        'Cómo gestionar extensos perímetros y múltiples sedes desde una sola plataforma inteligente.',
+        'Especialistas de toda Latinoamérica analizan innovación en videovigilancia, IA y control de acceso.',
       fullSummary:
-        'Los parques industriales requieren supervisar amplios perímetros, circulación constante de vehículos y múltiples empresas al mismo tiempo. El caso de FINSA con Verkada demuestra cómo centralizar la seguridad en la nube agiliza el control multisitio sin depender de sistemas aislados.',
+        'Los Encuentros Tecnológicos de la Asociación Latinoamericana de Seguridad (ALAS) acercan a las principales ciudades de la región las últimas tendencias en seguridad electrónica, integración de sistemas, analítica inteligente y transformación operativa.',
       keyPoints: [
-        'Supervisión centralizada de múltiples sedes y perímetros extensos.',
-        'Control ágil del flujo vehicular y continuidad operativa ante incidentes.',
-        'Administración remota más simple con tecnología en la nube.'
+        'Actualización continua en tecnologías emergentes de CCTV, alarmas y accesos.',
+        'Espacio regional de conexión entre fabricantes, integradores y usuarios finales.',
+        'Enfoque práctico para resolver los retos reales de protección en Latinoamérica.'
       ],
-      source: 'Security Fair Colombia',
-      url: 'https://www.securityfaircolombia.com/es/noticia/7691/finsa_centraliza_su_seguridad_con_verkada'
+      source: 'ALAS',
+      url: 'https://alas-la.org/encuentros-tecnologicos/'
     }
   ];
 
@@ -266,7 +266,7 @@
             Novedades en <span class="text-[#FFC107]">Seguridad Física y Electrónica</span>
           </h2>
           <p class="mt-3 text-base text-slate-300">
-            Noticias reales en español de Security Fair Colombia (ESS+) y Tecnoseguro. Haz clic en cualquiera para ver el detalle.
+            Noticias reales en español de ALAS, Security Fair Colombia (ESS+) y Tecnoseguro. Haz clic en cualquiera para ver el detalle.
           </p>
         </div>
 
