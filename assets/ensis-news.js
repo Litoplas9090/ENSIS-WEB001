@@ -1,6 +1,6 @@
 /**
  * ENSIS Security - Sección de Noticias del Sector (Seguridad Física y Electrónica)
- * Tarjetas resumidas con imagen editorial + modal nativo <dialog> con información completa y fuente real.
+ * Artículos reales, verificados (HTTP 200) y 100% en español de Security Fair Colombia (ESS+) y Tecnoseguro.
  */
 (function () {
   const NEWS_ITEMS = [
@@ -11,19 +11,19 @@
       badgeClass: '',
       date: '2026',
       image: './images/news/news-edge-ai.jpg',
-      imageAlt: 'Cámara de videovigilancia IP con inteligencia artificial Edge AI instalada en fachada corporativa',
-      title: 'IA predictiva y Edge AI en videovigilancia inteligente',
+      imageAlt: 'Cámara de videovigilancia IP con inteligencia artificial instalada en fachada corporativa',
+      title: 'Inteligencia de video e IA aplicada a la operación en LATAM',
       shortSummary:
-        'Las cámaras analizan escenas en tiempo real y reducen hasta un 50% las falsas alarmas.',
+        'Milestone XPerience Days LATAM 2026 presenta avances en analítica de video y plataformas abiertas.',
       fullSummary:
-        'La videovigilancia ha evolucionado de la grabación pasiva al análisis activo en el borde (Edge AI). Gracias a procesadores neuronales integrados directamente en las cámaras, los sistemas clasifican personas, vehículos y conductas anómalas al instante sin saturar la red ni depender únicamente de servidores externos.',
+        'En el marco de XPerience Days LATAM 2026, Milestone Systems mostró cómo la inteligencia artificial y la gestión de video de plataforma abierta transforman las centrales de monitoreo en operaciones proactivas con alertas más precisas.',
       keyPoints: [
-        'Filtrado inteligente que descarta sombras, clima y animales antes de alertar.',
-        'Detección temprana de merodeo, cruce de perímetros y comportamientos inusuales.',
-        'Búsqueda rápida de eventos mediante lenguaje natural para equipos de monitoreo.'
+        'Analítica de video basada en IA integrada a la operación diaria.',
+        'Plataformas abiertas que facilitan conectar cámaras y sensores de distintos fabricantes.',
+        'Mayor agilidad en la verificación de eventos y toma de decisiones.'
       ],
-      source: 'Segurilatam',
-      url: 'https://www.segurilatam.com/'
+      source: 'Tecnoseguro',
+      url: 'https://www.tecnoseguro.com/noticias/cctv/milestone-xperience-days-ia-video'
     },
     {
       id: 'access-control',
@@ -32,19 +32,19 @@
       badgeClass: '',
       date: '2026',
       image: './images/news/news-access-control.jpg',
-      imageAlt: 'Control de acceso biométrico y credenciales móviles NFC en entrada corporativa',
-      title: 'Control de acceso sin contacto: biometría y móvil NFC',
+      imageAlt: 'Control de acceso peatonal moderno con tecnología biométrica en entrada corporativa',
+      title: 'Pasillos electrónicos Speed Gate para control de acceso peatonal',
       shortSummary:
-        'Las credenciales digitales y el reconocimiento facial reemplazan a las tarjetas físicas.',
+        'CAME Özak integra velocidad, seguridad y eficiencia en accesos corporativos de alto tráfico.',
       fullSummary:
-        'Edificios corporativos, industrias y conjuntos residenciales están migrando rápidamente hacia sistemas de acceso sin contacto. El uso de credenciales cifradas en smartphones (NFC/Bluetooth) y lectores faciales multimodales agiliza el ingreso y eleva el nivel de trazabilidad.',
+        'Los pasillos electrónicos Speed Gate PG 04 y HG 04 de CAME Özak integran sensores ópticos de precisión, diseño moderno y control ágil de flujo peatonal para reforzar la seguridad en edificios corporativos e institucionales.',
       keyPoints: [
-        'Reconocimiento facial con prueba de vida (liveness) que evita suplantaciones.',
-        'Gestión centralizada de permisos temporales para visitantes y contratistas.',
-        'Integración nativa con videovigilancia (VMS) para verificar cada ingreso.'
+        'Control de paso rápido y seguro que evita accesos no autorizados (tailgating).',
+        'Integración directa con lectores biométricos, tarjetas o credenciales móviles.',
+        'Alta eficiencia operativa para recepciones con gran volumen de visitantes.'
       ],
-      source: 'Ventas de Seguridad',
-      url: 'https://www.ventasdeseguridad.com/'
+      source: 'Tecnoseguro',
+      url: 'https://www.tecnoseguro.com/noticias/control-de-acceso/came-ozak-speed-gate'
     },
     {
       id: 'unified-platform',
@@ -54,18 +54,18 @@
       date: '2026',
       image: './images/news/news-unified-platform.jpg',
       imageAlt: 'Centro de control de seguridad con plataforma unificada de CCTV, accesos y alarmas',
-      title: 'Plataformas unificadas: CCTV, alarmas y ciberseguridad',
+      title: 'Plataforma abierta ODISEE para seguridad física en entornos críticos',
       shortSummary:
-        'Un solo panel centraliza vigilancia física, control de acceso y alertas críticas.',
+        'DORLET lanza en Latinoamérica un sistema unificado que centraliza accesos, intrusión y video.',
       fullSummary:
-        'La tendencia dominante en seguridad física corporativa es eliminar los sistemas aislados. Las plataformas unificadas combinan videovigilancia, intrusión, control de accesos y monitoreo de red en una sola interfaz para responder con rapidez frente a incidentes físicos y digitales.',
+        'DORLET presentó en Latinoamérica ODISEE, una plataforma abierta diseñada para integrar y centralizar la gestión de la seguridad física en infraestructuras críticas, conectando control de accesos, videovigilancia y alarmas en un solo panel.',
       keyPoints: [
-        'Visibilidad completa de múltiples sedes desde un único centro de control.',
-        'Protocolos automatizados que correlacionan alarmas con video en vivo.',
-        'Alineación operativa entre seguridad física y áreas de tecnología (TI).'
+        'Gestión unificada de subsistemas de seguridad física desde una sola interfaz.',
+        'Arquitectura abierta preparada para crecer según las necesidades de cada sede.',
+        'Mayor trazabilidad y respuesta coordinada ante incidentes críticos.'
       ],
-      source: 'Seguritecnia',
-      url: 'https://www.seguritecnia.es/'
+      source: 'Tecnoseguro',
+      url: 'https://www.tecnoseguro.com/noticias/integracion/dorlet-odisee-seguridad-integracion'
     },
     {
       id: 'hybrid-guard',
@@ -74,61 +74,61 @@
       badgeClass: 'news-badge--fisica',
       date: '2026',
       image: './images/news/news-hybrid-guard.jpg',
-      imageAlt: 'Vigilante profesional revisando alertas de seguridad en tiempo real desde un dispositivo móvil',
-      title: 'Vigilancia híbrida: talento humano potenciado con alertas',
+      imageAlt: 'Personal de seguridad en instalaciones modernas aplicando integración tecnológica',
+      title: 'ESS+ 2026 en Colombia destaca la integración tecnológica global',
       shortSummary:
-        'Las alertas móviles en tiempo real fortalecen la capacidad de reacción del vigilante.',
+        'La Feria Internacional de Seguridad reunió en Bogotá soluciones integrales para proteger personas y activos.',
       fullSummary:
-        'Lejos de sustituir al personal de seguridad, la tecnología moderna actúa como un multiplicador de eficiencia. Los guardias reciben notificaciones verificadas directamente en sus dispositivos móviles, reduciendo la fatiga operativa y permitiendo rondas más estratégicas.',
+        'La Feria Internacional de Seguridad ESS+ cerró su edición 2026 en Corferias Bogotá bajo el concepto “Integración de Tecnologías Globales”, reuniendo a especialistas y empresas en torno a soluciones reales para la protección de personas, activos y operaciones.',
       keyPoints: [
-        'Respuesta más ágil al priorizar incidentes reales verificados por analítica.',
-        'Registro digital de rondas, novedades y reportes en tiempo real.',
-        'Mejor equilibrio entre cobertura presencial y respaldo electrónico 24/7.'
+        'Convergencia entre vigilancia física profesional y tecnología electrónica avanzada.',
+        'Soluciones adaptadas a las necesidades operativas de empresas en Colombia.',
+        'Enfoque en prevención, respuesta rápida y continuidad del negocio.'
       ],
-      source: 'Revista Seguridad 360',
-      url: 'https://revistaseguridad360.com/'
+      source: 'Security Fair Colombia',
+      url: 'https://www.securityfaircolombia.com/es/noticia/7763/ess+_2026_cerro_una_edicion_marcada_por_la_integracion_tecnologica_y_las_oportunidades'
     },
     {
       id: 'iot-cybersecurity',
       category: 'electronica',
-      categoryLabel: 'Ciberseguridad IoT',
+      categoryLabel: 'Seguridad Electrónica',
       badgeClass: '',
-      date: '2025–2026',
+      date: '2026',
       image: './images/news/news-iot-cybersecurity.jpg',
-      imageAlt: 'Cámara IP domo y equipos de red empresarial protegidos con ciberseguridad IoT',
-      title: 'Ciberseguridad en cámaras IP y sensores conectados',
+      imageAlt: 'Infraestructura de cámaras IP y seguridad bancaria de última generación',
+      title: 'Más de 5.400 cámaras con IA fortalecen al Banco Agrario en Colombia',
       shortSummary:
-        'Cifrado de extremo a extremo y autenticación MFA para blindar redes de seguridad.',
+        'Un moderno Centro de Mando y Control eleva la videovigilancia bancaria a nivel nacional.',
       fullSummary:
-        'Cada cámara IP, panel de alarma o controlador de acceso conectado a la red amplía la superficie digital de una organización. Por ello, fabricantes e integradores priorizan estándares de ciberseguridad desde el diseño para impedir accesos no autorizados o manipulaciones de video.',
+        'El Banco Agrario de Colombia modernizó su seguridad electrónica mediante un Centro de Mando y Control equipado con más de 5.400 cámaras de última generación e inteligencia artificial, consolidando un referente de protección bancaria en el país.',
       keyPoints: [
-        'Cifrado avanzado en tránsito y almacenamiento para proteger grabaciones.',
-        'Actualizaciones continuas de firmware y segmentación de redes de seguridad.',
-        'Autenticación multifactor (MFA) y principios Zero Trust en accesos remotos.'
+        'Despliegue nacional de más de 5.400 cámaras conectadas a un centro de mando.',
+        'Integración de analítica inteligente para detección oportuna de riesgos.',
+        'Supervisión centralizada que eleva los estándares de seguridad institucional.'
       ],
-      source: 'Axis Newsroom (ES)',
-      url: 'https://newsroom.axis.com/es-es'
+      source: 'Security Fair Colombia',
+      url: 'https://www.securityfaircolombia.com/es/noticia/7592/___bolide_technology_fortalece_la_seguridad_del_banco_agrario_de_colombia_con_soluciones_de_vanguardia'
     },
     {
       id: 'cloud-analytics',
       category: 'electronica',
       categoryLabel: 'Analítica y Nube',
       badgeClass: '',
-      date: '2025–2026',
+      date: '2026',
       image: './images/news/news-cloud-analytics.jpg',
-      imageAlt: 'Complejo empresarial y comercial en Latinoamérica con infraestructura de videovigilancia en la nube',
-      title: 'Videovigilancia en la nube (VSaaS) e inteligencia operativa',
+      imageAlt: 'Complejo industrial y empresarial con videovigilancia centralizada en la nube',
+      title: 'Seguridad centralizada en parques industriales de alto tráfico',
       shortSummary:
-        'Arquitecturas híbridas en la nube optimizan costos y aportan datos clave al negocio.',
+        'Cómo gestionar extensos perímetros y múltiples sedes desde una sola plataforma inteligente.',
       fullSummary:
-        'En Colombia y América Latina crece la adopción de modelos híbridos y Videovigilancia como Servicio (VSaaS). Además de proteger activos, los metadatos generados por las cámaras ayudan a medir aforos, flujos de clientes y eficiencia operativa en comercios e industrias.',
+        'Los parques industriales requieren supervisar amplios perímetros, circulación constante de vehículos y múltiples empresas al mismo tiempo. El caso de FINSA con Verkada demuestra cómo centralizar la seguridad en la nube agiliza el control multisitio sin depender de sistemas aislados.',
       keyPoints: [
-        'Menor inversión en servidores locales y escalabilidad flexible por sede.',
-        'Acceso remoto seguro desde celular o navegador con respaldo en la nube.',
-        'Analítica de aforos y mapas de calor que respaldan decisiones gerenciales.'
+        'Supervisión centralizada de múltiples sedes y perímetros extensos.',
+        'Control ágil del flujo vehicular y continuidad operativa ante incidentes.',
+        'Administración remota más simple con tecnología en la nube.'
       ],
-      source: 'Tecnoseguro',
-      url: 'https://www.tecnoseguro.com/'
+      source: 'Security Fair Colombia',
+      url: 'https://www.securityfaircolombia.com/es/noticia/7691/finsa_centraliza_su_seguridad_con_verkada'
     }
   ];
 
@@ -161,7 +161,7 @@
         <ul id="news-modal-points" class="news-modal-points"></ul>
         <div class="news-modal-actions">
           <a id="news-modal-source-link" class="news-modal-source-btn" href="#" target="_blank" rel="noopener noreferrer">
-            <span id="news-modal-source-text">Ver fuente original</span>
+            <span id="news-modal-source-text">Leer noticia completa</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               <polyline points="15 3 21 3 21 9"></polyline>
@@ -175,12 +175,10 @@
       </div>
     `;
 
-    // Reset returnValue on close per modern dialog guidance
     dialog.addEventListener('close', () => {
       dialog.returnValue = '';
     });
 
-    // Fallback light-dismiss for browsers without native closedby support (e.g. Safari)
     if (!('closedBy' in HTMLDialogElement.prototype)) {
       const outside = (e) => {
         const r = dialog.getBoundingClientRect();
@@ -217,7 +215,7 @@
     summary.textContent = item.fullSummary;
     points.innerHTML = item.keyPoints.map((pt) => `<li>${pt}</li>`).join('');
     link.href = item.url;
-    sourceText.textContent = `Leer en ${item.source}`;
+    sourceText.textContent = `Leer artículo en ${item.source}`;
 
     dialog.showModal();
   }
@@ -268,7 +266,7 @@
             Novedades en <span class="text-[#FFC107]">Seguridad Física y Electrónica</span>
           </h2>
           <p class="mt-3 text-base text-slate-300">
-            Haz clic en cualquier noticia para ver el resumen completo y su fuente oficial.
+            Noticias reales en español de Security Fair Colombia (ESS+) y Tecnoseguro. Haz clic en cualquiera para ver el detalle.
           </p>
         </div>
 
@@ -288,7 +286,6 @@
     const dialog = createNewsModal();
     section.appendChild(dialog);
 
-    // Open modal on card trigger click
     section.querySelectorAll('button.card-trigger').forEach((btn) => {
       btn.addEventListener('click', () => {
         const id = btn.getAttribute('data-news-id');
@@ -297,7 +294,6 @@
       });
     });
 
-    // Category filtering
     const buttons = section.querySelectorAll('.news-filter-btn');
     const cards = section.querySelectorAll('.news-card');
     buttons.forEach((btn) => {
