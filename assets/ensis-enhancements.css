@@ -493,6 +493,40 @@ a[aria-label="WhatsApp ENSIS Security"] {
   right: calc(1.25rem + env(safe-area-inset-right, 0px)) !important;
 }
 
+/* Crisp metallic presentation for the real ENSIS shield logo */
+img[src*="logo.png"] {
+  filter: drop-shadow(0 2px 10px rgba(255, 193, 7, 0.28));
+  object-fit: contain;
+}
+
+/* Audit fix 1: Prevent mobile/tablet hamburger menu from clipping the 8th link or phone CTA */
+header > div.max-h-96 {
+  max-height: 85svh !important;
+  overflow-y: auto !important;
+}
+
+/* Audit fix 2: Keep desktop/tablet-landscape navbar on a single clean row with 8 links */
+@media (min-width: 1024px) and (max-width: 1240px) {
+  header nav {
+    gap: 1.05rem !important;
+  }
+  header nav a.nav-link {
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+  header a.btn-primary {
+    padding-inline: 0.9rem !important;
+    white-space: nowrap;
+  }
+}
+
+/* Audit fix 3: Disable fixed parallax on touch devices (iOS Safari/iPadOS zoom glitch) */
+@media (max-width: 1024px), (hover: none) {
+  .parallax-bg {
+    background-attachment: scroll !important;
+  }
+}
+
 @media (max-width: 640px) {
   /* Dynamic mobile viewport height so address bar never clips the hero */
   #inicio {
