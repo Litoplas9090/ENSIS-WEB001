@@ -23,6 +23,11 @@
   isolation: isolate;
 }
 
+/* Remove "Alertas directas a tu celular" badge from hero */
+#inicio .max-w-2xl > .reveal:nth-child(1) {
+  display: none !important;
+}
+
 #inicio > div:first-child img[src*="hero-guard"] {
   filter: brightness(1.22) contrast(1.06) saturate(1.42);
   transform: scale(1.01);
