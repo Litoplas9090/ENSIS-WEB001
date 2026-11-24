@@ -534,69 +534,75 @@ header > div.max-h-96 {
     align-items: flex-end;
   }
 
-  /* Frame the guard higher so cap, crest & face breathe above the headline */
+  /* Frame the guard higher so cap, crest & face shine cleanly in the upper half */
   #inicio > div:first-child img[src*="hero-guard"] {
-    object-position: 68% 15% !important;
-    filter: brightness(1.16) contrast(1.06) saturate(1.36);
+    object-position: 68% 12% !important;
+    filter: brightness(1.18) contrast(1.06) saturate(1.38);
   }
 
-  /* Balanced mobile scrim: keeps upper face/cap vibrant, ensures crisp text contrast below */
+  /* Clean mobile scrim: upper 50% stays bright & open for the guard, lower 50% gives crisp contrast */
   #inicio .hero-scrim-horizontal {
     background: linear-gradient(
       to bottom var(--in-oklab),
-      rgba(11, 15, 20, 0.28) 0%,
-      rgba(11, 15, 20, 0.48) 34%,
-      rgba(11, 15, 20, 0.80) 64%,
-      rgba(11, 15, 20, 0.94) 100%
+      rgba(11, 15, 20, 0.22) 0%,
+      rgba(11, 15, 20, 0.14) 38%,
+      rgba(11, 15, 20, 0.72) 66%,
+      rgba(11, 15, 20, 0.95) 100%
     ) !important;
   }
 
   #inicio .hero-scrim-vertical {
     background: linear-gradient(
       to top var(--in-oklab),
-      rgba(11, 15, 20, 0.82) 0%,
-      rgba(11, 15, 20, 0.15) 42%,
-      rgba(11, 15, 20, 0.35) 100%
+      rgba(11, 15, 20, 0.88) 0%,
+      rgba(11, 15, 20, 0.08) 46%,
+      rgba(11, 15, 20, 0.30) 100%
     ) !important;
   }
 
-  /* Push hero content slightly lower so headline doesn't sit directly over the guard's eyes */
+  /* Anchor hero text cleanly in the lower portion so the guard's face is never covered */
   #inicio > div.relative.z-10 {
-    padding-top: 9.5rem !important;
-    padding-bottom: 4.75rem !important;
+    padding-top: 15.5rem !important;
+    padding-bottom: 3.25rem !important;
   }
 
-  /* Crisp headline, subtitle & bottom pillar readability over photography */
+  /* Declutter mobile hero: hide the verbose 3-line paragraph & redundant 4-item bottom list */
+  #inicio .max-w-2xl > .reveal:nth-child(3),
+  #inicio .max-w-2xl > .reveal:nth-child(5) {
+    display: none !important;
+  }
+
+  /* Compact badge & crisp headline */
+  #inicio .max-w-2xl > .reveal:nth-child(1) {
+    margin-bottom: 0.65rem !important;
+  }
+
   #inicio h1 {
-    font-size: clamp(2.35rem, 11vw, 3.1rem) !important;
+    font-size: clamp(2.15rem, 10vw, 2.75rem) !important;
     line-height: 0.98 !important;
-    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.65);
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.75);
   }
 
-  #inicio p {
-    color: rgba(255, 255, 255, 0.92) !important;
-    font-size: 1rem !important;
-    line-height: 1.55 !important;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  /* Compact spacing before CTA buttons */
+  #inicio .max-w-2xl > .reveal:nth-child(4) > div {
+    margin-top: 1.25rem !important;
+    gap: 0.65rem !important;
   }
 
-  /* Secondary CTA button ("Conocer servicios"): frosted dark glass for high contrast over blue shirt */
+  /* Secondary CTA button ("Conocer servicios"): frosted dark glass for high contrast */
   #inicio a[href="#servicios"] {
-    background: rgba(11, 15, 20, 0.62) !important;
+    background: rgba(11, 15, 20, 0.68) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-color: rgba(255, 255, 255, 0.38) !important;
     color: #ffffff !important;
-    min-height: 52px;
+    min-height: 48px;
+    padding-block: 0.8rem !important;
   }
 
   #inicio .btn-primary {
-    min-height: 52px;
-  }
-
-  /* Bottom 4 pillars: crisp contrast over uniform */
-  #inicio .grid {
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+    min-height: 48px;
+    padding-block: 0.85rem !important;
   }
 
   /* Horizontal swipeable single-row news filter bar on mobile */
