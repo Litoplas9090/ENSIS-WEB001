@@ -257,8 +257,9 @@
       }
     }
 
-    // 2. Add Colombian Legal Bar inside <footer>
-    const footer = document.querySelector('footer');
+    // 2. Add Colombian Legal Bar inside the page's main <footer> (never an <article> card footer)
+    const siteFooters = Array.from(document.querySelectorAll('footer')).filter((el) => !el.closest('article'));
+    const footer = siteFooters[siteFooters.length - 1];
     if (footer && !document.getElementById('ensis-legal-bar')) {
       const container = footer.firstElementChild || footer;
       const bar = document.createElement('div');
