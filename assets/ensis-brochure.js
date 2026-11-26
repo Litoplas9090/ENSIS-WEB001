@@ -9,8 +9,8 @@
       desc: 'Anticipamos riesgos para evitar incidentes.'
     },
     {
-      title: 'Monitoreo',
-      desc: 'Vigilancia constante con tecnología avanzada.'
+      title: 'Supervisión',
+      desc: 'Seguimiento operativo constante con tecnología de apoyo.'
     },
     {
       title: 'Control',
@@ -40,8 +40,8 @@
     },
     {
       num: '04',
-      title: 'Monitoreo y control',
-      desc: 'Verificamos el cumplimiento mediante supervisión, indicadores y seguimiento permanente.'
+      title: 'Supervisión y control',
+      desc: 'Verificamos el cumplimiento mediante supervisión operativa, indicadores y seguimiento permanente.'
     },
     {
       num: '05',
@@ -55,7 +55,7 @@
     'Guardia sin arma preventiva y de recepción',
     'Puestos de control de visitantes y proveedores',
     'Rondas programadas y supervisión operativa',
-    'Monitoreo 24/7 y visualización remota',
+    'Alertas directas al celular y visualización remota',
     'Evidencia digital, trazabilidad y reportes'
   ];
 
@@ -66,13 +66,6 @@
       caption: 'Guardia armada, guardia sin arma, puestos de control, rondas y análisis de riesgos.',
       image: './images/brochure/seguridad-fisica-2026.jpg',
       alt: 'Brochure ENSIS SECURITY LTDA 2026 - Seguridad Física Profesional'
-    },
-    {
-      id: 'tiempo-real',
-      label: 'Seguridad en Tiempo Real',
-      caption: 'Monitoreo 24/7, alertas en tiempo real, gestión desde celular o tablet y evidencia digital.',
-      image: './images/brochure/seguridad-tiempo-real-2026.jpg',
-      alt: 'Brochure ENSIS SECURITY LTDA 2026 - Seguridad en Tiempo Real'
     },
     {
       id: 'metodologia',
