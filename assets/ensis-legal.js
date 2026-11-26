@@ -13,7 +13,7 @@
       updated: 'Actualizada: 2026 · República de Colombia',
       html: `
         <h4>1. Responsable del Tratamiento</h4>
-        <p><strong>ENSIS Security</strong>, con domicilio principal en Cra. 61 #74-177, Nte. Centro Histórico, Barranquilla, Atlántico, Colombia; teléfono/WhatsApp <strong>+57 310 292 7152</strong> y correo electrónico <strong>comercial@ensissecurity.com</strong>, actúa como responsable del tratamiento de los datos personales recolectados a través de este sitio web y sus canales oficiales.</p>
+        <p><strong>ENSIS SECURITY LTDA</strong>, con domicilio principal en Cra. 61 #74-177, Nte. Centro Histórico, Barranquilla, Atlántico, Colombia; teléfono/WhatsApp <strong>+57 310 292 7152</strong> y correo electrónico <strong>comercial@ensissecurity.com</strong>, actúa como responsable del tratamiento de los datos personales recolectados a través de este sitio web y sus canales oficiales.</p>
 
         <h4>2. Marco Normativo Aplicable</h4>
         <p>Esta política se rige por el artículo 15 de la Constitución Política de Colombia, la <strong>Ley Estatutaria 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> (compilado en el Decreto Único Reglamentario 1074 de 2015) y las directrices de la <strong>Superintendencia de Industria y Comercio (SIC)</strong>.</p>
@@ -51,7 +51,7 @@
       title: 'Aviso de Privacidad',
       updated: 'Actualizado: 2026 · República de Colombia',
       html: `
-        <p><strong>ENSIS Security</strong> (Cra. 61 #74-177, Barranquilla, Atlántico · Tel. 310 292 7152 · comercial@ensissecurity.com) informa a los visitantes y usuarios de este sitio web que los datos personales suministrados voluntariamente a través de nuestros canales de contacto (WhatsApp, teléfono, correo electrónico o formularios) serán tratados de manera confidencial y segura.</p>
+        <p><strong>ENSIS SECURITY LTDA</strong> (Cra. 61 #74-177, Barranquilla, Atlántico · Tel. 310 292 7152 · comercial@ensissecurity.com) informa a los visitantes y usuarios de este sitio web que los datos personales suministrados voluntariamente a través de nuestros canales de contacto (WhatsApp, teléfono, correo electrónico o formularios) serán tratados de manera confidencial y segura.</p>
         <h4>Finalidad principal</h4>
         <p>Responder solicitudes de información, agendar diagnósticos gratuitos de riesgo, elaborar propuestas comerciales de seguridad física y electrónica y atender PQRS.</p>
         <h4>Carácter facultativo</h4>
@@ -66,7 +66,7 @@
       updated: 'Actualizados: 2026 · República de Colombia',
       html: `
         <h4>1. Objeto y Carácter Informativo</h4>
-        <p>El presente sitio web tiene carácter informativo y comercial sobre los servicios de seguridad física y electrónica ofrecidos por <strong>ENSIS Security</strong> en Barranquilla y el territorio colombiano. La información publicada no constituye una oferta mercantil vinculante; todo servicio, alcance, tarifa y garantía se formaliza exclusivamente mediante cotización aprobada y contrato escrito conforme a la normativa vigente (incluido el Decreto Ley 356 de 1994 cuando aplique a servicios de vigilancia y seguridad privada).</p>
+        <p>El presente sitio web tiene carácter informativo y comercial sobre los servicios de seguridad física y electrónica ofrecidos por <strong>ENSIS SECURITY LTDA</strong> en Barranquilla y el territorio colombiano. La información publicada no constituye una oferta mercantil vinculante; todo servicio, alcance, tarifa y garantía se formaliza exclusivamente mediante cotización aprobada y contrato escrito conforme a la normativa vigente (incluido el Decreto Ley 356 de 1994 cuando aplique a servicios de vigilancia y seguridad privada).</p>
 
         <h4>2. Propiedad Intelectual y Marcas de Terceros</h4>
         <p>Los textos, diseño, estructura, logotipo y signos distintivos de <strong>ENSIS Security</strong> están protegidos por la normativa de derechos de autor y propiedad industrial (Ley 23 de 1982 y Decisión Andina 351/486). Los logotipos y nombres comerciales de fabricantes aliados mostrados en el sitio (como Hikvision, Dahua, Ajax, ZKTeco, Suprema, Ubiquiti, DSC y Witek) son marcas registradas pertenecientes a sus respectivos propietarios y se exhiben únicamente con fines informativos sobre compatibilidad tecnológica.</p>
