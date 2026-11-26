@@ -156,9 +156,19 @@
         pos: 'center 22%'
       },
       {
-        src: './images/team-9.jpg',
-        alt: 'Guarda de seguridad de ENSIS SECURITY LTDA en conjunto residencial',
+        src: './images/team-9.jpg?v=2',
+        alt: 'Guardas de seguridad de ENSIS SECURITY LTDA en servicio operativo',
         pos: 'center 18%'
+      },
+      {
+        src: './images/team-10.jpg',
+        alt: 'Supervisor nocturno motorizado de ENSIS SECURITY LTDA en entrada principal',
+        pos: 'center 22%'
+      },
+      {
+        src: './images/team-11.jpg',
+        alt: 'Equipo operativo de ENSIS SECURITY LTDA en puesto de control con torniquete',
+        pos: 'center 20%'
       }
     ];
 
@@ -243,14 +253,46 @@
     return true;
   }
 
+  function mountInstagramQR() {
+    if (document.getElementById('ensis-instagram-qr')) return true;
+    const contacto = document.getElementById('contacto');
+    if (!contacto) return false;
+
+    // Place cleanly inside the right column cards stack in #contacto (or end of #contacto info column in v2)
+    const rightCol = contacto.querySelector('.space-y-5, .space-y-6');
+    if (!rightCol) return false;
+
+    const card = document.createElement('a');
+    card.id = 'ensis-instagram-qr';
+    card.href = 'https://www.instagram.com/ensissecurity';
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+    card.className = 'instagram-qr-card';
+    card.setAttribute('aria-label', 'Seguir a ENSIS Security en Instagram @ensissecurity');
+    card.innerHTML = `
+      <div class="instagram-qr-thumb">
+        <img src="./images/instagram-qr.jpg" alt="Código QR oficial de Instagram @ENSISSECURITY" loading="lazy" />
+      </div>
+      <div class="instagram-qr-body">
+        <span class="instagram-qr-tag">Red Social Oficial</span>
+        <h3>Síguenos en Instagram</h3>
+        <p>Escanea el código QR o haz clic para ver nuestra operación diaria en <strong>@ensissecurity</strong>.</p>
+      </div>
+    `;
+    rightCol.appendChild(card);
+    return true;
+  }
+
   function init() {
     const ok1 = mountBrochureSection();
     const ok2 = mountTeamCarousel();
-    if (ok1 && ok2) return;
+    const ok3 = mountInstagramQR();
+    if (ok1 && ok2 && ok3) return;
     const observer = new MutationObserver(() => {
       const a = mountBrochureSection();
       const b = mountTeamCarousel();
-      if (a && b) {
+      const c = mountInstagramQR();
+      if (a && b && c) {
         observer.disconnect();
       }
     });
