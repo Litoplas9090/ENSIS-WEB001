@@ -106,10 +106,131 @@
     return false;
   }
 
+  function mountTeamCarousel() {
+    const baseImg = document.querySelector('#nosotros img[src*="team.jpg"], #quienes-somos img[src*="team.jpg"]');
+    if (!baseImg || baseImg.dataset.carouselInit === '1') return Boolean(baseImg);
+    baseImg.dataset.carouselInit = '1';
+
+    const parent = baseImg.parentElement;
+    if (!parent) return true;
+
+    const slides = [
+      {
+        src: baseImg.getAttribute('src') || './images/team.jpg?v=3',
+        alt: 'Vigilante profesional de ENSIS SECURITY LTDA con radio de comunicación',
+        pos: 'center 20%'
+      },
+      {
+        src: './images/team-2.jpg',
+        alt: 'Personal de seguridad supervisando cámaras locales en puesto de control',
+        pos: 'center center'
+      },
+      {
+        src: './images/team-3.jpg',
+        alt: 'Guarda de ENSIS SECURITY LTDA realizando control de acceso peatonal',
+        pos: 'center 15%'
+      },
+      {
+        src: './images/team-4.jpg',
+        alt: 'Inspección vehicular y control en parqueadero por guarda de ENSIS SECURITY',
+        pos: 'center 20%'
+      },
+      {
+        src: './images/team-5.jpg',
+        alt: 'Ronda preventiva en parqueadero por personal uniformado de ENSIS SECURITY',
+        pos: 'center 22%'
+      }
+    ];
+
+    // Wrap the base image in a fixed-ratio relative stage so all 5 photos crossfade with zero layout shift
+    const stage = document.createElement('div');
+    stage.className = 'team-carousel-stage';
+    stage.setAttribute('aria-roledescription', 'carrusel');
+    stage.setAttribute('aria-label', 'Galería de personal operativo de ENSIS SECURITY LTDA');
+
+    baseImg.parentNode.insertBefore(stage, baseImg);
+    baseImg.remove();
+
+    const imgEls = slides.map((sl, idx) => {
+      const img = document.createElement('img');
+      img.src = sl.src;
+      img.alt = sl.alt;
+      img.className = 'team-carousel-img' + (idx === 0 ? ' is-active' : '');
+      img.style.objectPosition = sl.pos;
+      if (idx > 0) img.loading = 'eager';
+      stage.appendChild(img);
+      return img;
+    });
+
+    const dotsWrap = document.createElement('div');
+    dotsWrap.className = 'team-carousel-dots';
+    dotsWrap.setAttribute('role', 'tablist');
+    dotsWrap.setAttribute('aria-label', 'Seleccionar fotografía del equipo');
+
+    let current = 0;
+    let timer = null;
+
+    const dotBtns = slides.map((_, idx) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'team-carousel-dot' + (idx === 0 ? ' is-active' : '');
+      btn.setAttribute('aria-label', `Ver foto ${idx + 1} de ${slides.length}`);
+      btn.setAttribute('aria-selected', idx === 0 ? 'true' : 'false');
+      btn.addEventListener('click', () => {
+        goTo(idx);
+        restartTimer();
+      });
+      dotsWrap.appendChild(btn);
+      return btn;
+    });
+    stage.appendChild(dotsWrap);
+
+    function goTo(index) {
+      imgEls[current].classList.remove('is-active');
+      dotBtns[current].classList.remove('is-active');
+      dotBtns[current].setAttribute('aria-selected', 'false');
+      current = (index + slides.length) % slides.length;
+      imgEls[current].classList.add('is-active');
+      dotBtns[current].classList.add('is-active');
+      dotBtns[current].setAttribute('aria-selected', 'true');
+    }
+
+    function startTimer() {
+      if (timer || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      timer = setInterval(() => goTo(current + 1), 3000);
+    }
+
+    function stopTimer() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    function restartTimer() {
+      stopTimer();
+      startTimer();
+    }
+
+    stage.addEventListener('mouseenter', stopTimer);
+    stage.addEventListener('mouseleave', startTimer);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stopTimer();
+      else startTimer();
+    });
+
+    startTimer();
+    return true;
+  }
+
   function init() {
-    if (mountBrochureSection()) return;
+    const ok1 = mountBrochureSection();
+    const ok2 = mountTeamCarousel();
+    if (ok1 && ok2) return;
     const observer = new MutationObserver(() => {
-      if (mountBrochureSection()) {
+      const a = mountBrochureSection();
+      const b = mountTeamCarousel();
+      if (a && b) {
         observer.disconnect();
       }
     });
