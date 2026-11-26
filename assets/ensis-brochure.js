@@ -271,12 +271,12 @@
     card.setAttribute('aria-label', 'Seguir a ENSIS Security en Instagram @ensissecurity');
     card.innerHTML = `
       <div class="instagram-qr-thumb">
-        <img src="./images/instagram-qr.jpg" alt="Código QR oficial de Instagram @ENSISSECURITY" loading="lazy" />
+        <img src="./images/instagram-qr.png" alt="Código QR oficial de Instagram @ENSISSECURITY" loading="lazy" />
       </div>
       <div class="instagram-qr-body">
         <span class="instagram-qr-tag">Red Social Oficial</span>
         <h3>Síguenos en Instagram</h3>
-        <p>Escanea el código QR o haz clic para ver nuestra operación diaria en <strong>@ensissecurity</strong>.</p>
+        <p>Escanea el código QR con tu celular o haz clic aquí para abrir <strong>@ensissecurity</strong>.</p>
       </div>
     `;
     rightCol.appendChild(card);
