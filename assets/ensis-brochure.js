@@ -139,6 +139,26 @@
         src: './images/team-5.jpg',
         alt: 'Ronda preventiva en parqueadero por personal uniformado de ENSIS SECURITY',
         pos: 'center 22%'
+      },
+      {
+        src: './images/team-6.jpg',
+        alt: 'Guarda de ENSIS SECURITY LTDA en puesto de acceso a parqueadero corporativo',
+        pos: 'center 18%'
+      },
+      {
+        src: './images/team-7.jpg',
+        alt: 'Control de ingreso y verificación de bolsos en portería por personal de ENSIS SECURITY',
+        pos: 'center 22%'
+      },
+      {
+        src: './images/team-8.jpg',
+        alt: 'Supervisor motorizado de ENSIS SECURITY LTDA en ronda operativa',
+        pos: 'center 22%'
+      },
+      {
+        src: './images/team-9.jpg',
+        alt: 'Guarda de seguridad de ENSIS SECURITY LTDA en conjunto residencial',
+        pos: 'center 18%'
       }
     ];
 
