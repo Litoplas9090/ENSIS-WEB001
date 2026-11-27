@@ -279,101 +279,6 @@
     document.body.appendChild(banner);
   }
 
-  function mountSuperVigilanciaSection() {
-    if (document.getElementById('respaldo-legal')) return true;
-    const anchor = document.getElementById('servicios');
-    if (!anchor || !anchor.parentNode) return false;
-
-    const section = document.createElement('section');
-    section.id = 'respaldo-legal';
-    section.className = 'sv-section';
-    section.setAttribute('aria-labelledby', 'sv-heading');
-    section.innerHTML = `
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="sv-shell">
-          <div class="sv-header">
-            <div class="sv-title-group">
-              <div class="sv-badge">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  <path d="m9 12 2 2 4-4"></path>
-                </svg>
-                <span>Vigilado SuperVigilancia · Ministerio de Defensa Nacional</span>
-              </div>
-              <h2 id="sv-heading" class="sv-heading">
-                Respaldo Legal y Licencia <span class="text-[#FFC107]">Vigente</span>
-              </h2>
-              <p class="sv-subtitle">
-                <strong>ENSIS SECURITY LIMITADA</strong> (<strong>NIT 900.644.610-1</strong>) opera legalmente autorizada por la
-                <strong>Superintendencia de Vigilancia y Seguridad Privada</strong> con domicilio principal en
-                <strong>Barranquilla – Atlántico</strong>.
-              </p>
-            </div>
-            <div class="sv-status-pill" aria-label="Licencia de funcionamiento vigente hasta el 15 de mayo de 2028">
-              <span class="sv-status-dot" aria-hidden="true"></span>
-              <div>
-                <span class="sv-status-label">Licencia Activa</span>
-                <strong class="sv-status-date">Hasta el 15 de mayo de 2028</strong>
-              </div>
-            </div>
-          </div>
-
-          <div class="sv-grid">
-            <article class="sv-card">
-              <span class="sv-card-eyebrow">Resolución Vigente</span>
-              <h3>No. 20204100068867</h3>
-              <p>Expedida el <strong>14 de octubre de 2020</strong>. Prórroga oficial por 10 años según el Art. 84 del Decreto 2106 de 2019 (Art. 115A Decreto Ley 356 de 1994).</p>
-            </article>
-
-            <article class="sv-card">
-              <span class="sv-card-eyebrow">Modalidades Autorizadas</span>
-              <h3>Vigilancia Fija, Móvil y Escolta</h3>
-              <p>Autorizados para prestar <strong>vigilancia fija</strong>, <strong>vigilancia móvil</strong> y <strong>escolta a personas, vehículos y mercancías</strong>.</p>
-            </article>
-
-            <article class="sv-card">
-              <span class="sv-card-eyebrow">Medios Autorizados</span>
-              <h3>Con y Sin Armas de Fuego</h3>
-              <p>Operación certificada con <strong>armas de fuego</strong> y <strong>sin armas de fuego</strong>, conforme a los artículos 5 y 14 del Decreto Ley 356 de 1994.</p>
-            </article>
-
-            <article class="sv-card">
-              <span class="sv-card-eyebrow">Identificación Tributaria</span>
-              <h3>NIT 900.644.610-1</h3>
-              <p><strong>ENSIS SECURITY LIMITADA</strong> · Antecedente Res. No. 20181300036347 del 10/05/2018 (en firme desde el 15/05/2018) · Barranquilla – Atlántico.</p>
-            </article>
-          </div>
-
-          <div class="sv-footer-bar">
-            <p class="sv-legal-meta">
-              Cumplimiento integral del Estatuto de Vigilancia y Seguridad Privada (Decreto Ley 356 de 1994, Decreto 2355 de 2006 y Decreto 2106 de 2019).
-            </p>
-            <div class="sv-actions">
-              <button type="button" class="sv-btn-primary" data-legal-open="licencia">
-                Ver detalle oficial de la Resolución
-              </button>
-              <a href="https://www.supervigilancia.gov.co" target="_blank" rel="noopener noreferrer" class="sv-btn-link">
-                SuperVigilancia.gov.co
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    section.querySelectorAll('[data-legal-open]').forEach((btn) => {
-      btn.addEventListener('click', () => openLegalDoc(btn.getAttribute('data-legal-open')));
-    });
-
-    anchor.parentNode.insertBefore(section, anchor);
-    return true;
-  }
-
   function injectLegalFooterAndContactNotice() {
     // 1. Add Habeas Data privacy notice inside #contacto (right below CTA buttons)
     const contacto = document.getElementById('contacto');
@@ -443,13 +348,9 @@
 
   function init() {
     showCookieBanner(false);
-    const okSv = mountSuperVigilanciaSection();
-    const okLegal = injectLegalFooterAndContactNotice();
-    if (okSv && okLegal) return;
+    if (injectLegalFooterAndContactNotice()) return;
     const observer = new MutationObserver(() => {
-      const a = mountSuperVigilanciaSection();
-      const b = injectLegalFooterAndContactNotice();
-      if (a && b) {
+      if (injectLegalFooterAndContactNotice()) {
         observer.disconnect();
       }
     });
