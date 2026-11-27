@@ -29,8 +29,7 @@
 }
 
 #inicio > div:first-child img[src*="hero-guard"] {
-  filter: brightness(1.22) contrast(1.06) saturate(1.42);
-  transform: scale(1.01);
+  filter: brightness(1.10) contrast(1.04) saturate(1.18);
   transition: filter 0.4s ease;
 }
 
@@ -542,7 +541,7 @@ header > div.max-h-96 {
   /* Frame the guard higher so cap, crest & face shine cleanly in the upper half */
   #inicio > div:first-child img[src*="hero-guard"] {
     object-position: 68% 12% !important;
-    filter: brightness(1.18) contrast(1.06) saturate(1.38);
+    filter: brightness(1.08) contrast(1.04) saturate(1.16);
   }
 
   /* Clean mobile scrim: upper 50% stays bright & open for the guard, lower 50% gives crisp contrast */
