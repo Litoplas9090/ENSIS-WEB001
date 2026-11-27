@@ -419,6 +419,12 @@
         <p class="footer-legal-disclaimer">
           ENSIS SECURITY LIMITADA · NIT 900.644.610-1 · Vigilado por la Superintendencia de Vigilancia y Seguridad Privada · Licencia de Funcionamiento prorrogada mediante Resolución No. 20204100068867 del 14/10/2020, vigente hasta el 15 de mayo de 2028 (Decreto Ley 356 de 1994 y Decreto 2106 de 2019) · Cumplimiento Ley 1581 de 2012, Decreto 1377 de 2013 y Ley 1480 de 2011.
         </p>
+        <div class="footer-sv-seal">
+          <span class="footer-sv-label">Vigilado por</span>
+          <a href="https://www.supervigilancia.gov.co" target="_blank" rel="noopener noreferrer" class="footer-sv-logo-link" aria-label="Superintendencia de Vigilancia y Seguridad Privada — Sitio oficial">
+            <img src="./images/supervigilancia-logo.webp" alt="Superintendencia de Vigilancia y Seguridad Privada — República de Colombia" class="footer-sv-logo" loading="lazy" />
+          </a>
+        </div>
       `;
 
       bar.querySelectorAll('[data-legal-open]').forEach((b) => {
